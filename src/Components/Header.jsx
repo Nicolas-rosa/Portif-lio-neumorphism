@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faEnvelope, faBriefcase, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -32,18 +33,26 @@ const Header = () => {
           <span className={isMenuOpen ? 'open' : ''}></span>
         </HamburgerButton>
         <NavMenu isOpen={isMenuOpen}>
-          <Button href="/">
+        <Link to="/">
+          <Button >
             <FontAwesomeIcon icon={faHome} /> Home
           </Button>
-          <Button href="/contato">
+          </Link>
+          <Link to="/contato">
+          <Button >
             <FontAwesomeIcon icon={faEnvelope} /> Contato
           </Button>
-          <Button href="/portifolio">
+          </Link>
+          <Link to="/portifolio">
+          <Button >
             <FontAwesomeIcon icon={faBriefcase} /> Portfólio
           </Button>
-          <Button href="/curriculo">
+          </Link>
+          <Link to="/curriculo">
+          <Button>
             <FontAwesomeIcon icon={faFileAlt} /> Currículo
           </Button>
+          </Link>
           <div className="mr-[-3vw] neumorphismT transition-all duration-1000 hover:ring-2 hover:ring-blue-500 flex h-[6vw] w-[25vw] bg-gradient-to-(#b3b3b3, #d5d5d5); items-center justify-center rounded-full hover:bg-[#40bfff24]">
           <h2 class="text-[2vw] font-bold text-blue-400 hover:text-[#79aaff] mb-[5%] text-center 
             transition-transform transform hover:scale-105 
