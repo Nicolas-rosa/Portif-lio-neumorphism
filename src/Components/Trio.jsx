@@ -4,7 +4,7 @@ import 'tailwindcss/tailwind.css';
 
 const Card = ({ title, skills }) => {
   return (
-    <CardContainer href="/portifolio" className="mt-10  neumorphism group relative block w-full sm:w-[40vw] md:w-[30vw] lg:w-[20vw] h-[30vh] sm:h-80 lg:h-96 ring-2 ring-blue-300 transition-transform duration-500">
+    <CardContainer className="mt-10  neumorphism group relative block w-full sm:w-[40vw] md:w-[30vw] lg:w-[20vw] h-[30vh] sm:h-80 lg:h-96 ring-2 ring-blue-300 transition-transform duration-500">
       <BorderSpan className="absolute inset-0  hover:ring-2 w-[20vw] hover:ring-blue-300"></BorderSpan>
       <ContentContainer className="relative  flex h-full items-center w-[20vw] justify-center bg-[#c7c7c7] transition-transform group-hover:scale-105 ">
         <FrontContent className="!pt-0 h-[20vw] transition-opacity ring-blue-300 group-hover:absolute group-hover:opacity-0  duration-500">
