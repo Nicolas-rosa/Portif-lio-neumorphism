@@ -1,0 +1,348 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hm{
+@media (max-width: 300px){
+font-size: 5vw;
+
+}
+}
+
+
+@keyframes fade-in {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-in-out;
+}
+
+.textShadow {
+
+  &:hover {
+  text-shadow: 
+  2px 2px 4px rgba(0, 217, 255, 0.036), /* Sombra escura para dar profundidade */
+  2px 2px 10px rgba(0, 170, 255, 0.144), /* Sombra azul suave */
+  2px 2px 20px rgba(0, 170, 255, 0.115); /* Sombra azul mais intensa */
+}
+}
+body{
+    background-color: #c7c7c7;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  .neu {
+    /* Background */
+    background-color: #c7c7c7;
+    /* Box Shadow */
+    box-shadow: inset -1px 1px 4px 0px #f0fffe,
+      inset 1px -1px 4px 0px #c7c7c7,
+      -1px 2px 4px 0px #c7c7c7;
+    /* Rounded Corners */
+    border-radius: 1.2em;
+    /* Height and Width */
+
+    /* Position relative for children */
+    position: relative;
+  }
+  
+  .neu input {
+    /* Remove default checkbox appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Position absolutely */
+    position: absolute;
+    /* Hide the checkbox */
+    opacity: 0;
+    /* Set a pointer */
+    cursor: pointer;
+  }
+  
+  .neu span {
+    /* Position absolutely */
+    position: absolute;
+    /* Centering */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Background and size */
+    background-color: #c7c7c7;
+    width: 90%;
+    height: 90%;
+    /* Rounded Corners */
+    border-radius: 0.8em;
+    /* Box Shadow */
+    box-shadow: inset -1px 1px 4px 0px #f0fffe,
+      inset 1px -1px 4px 0px #c7c7c7,
+      -1px 1px 2px 0px #c7c7c7;
+    /* Transition */
+    transition: box-shadow 200ms;
+  }
+  
+  .neu svg {
+    /* Position absolutely */
+    position: absolute;
+    /* Centering */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Height and Width */
+    height: 2em;
+    width: 2em;
+    /* Transition for opacity */
+    transition: opacity 200ms;
+  }
+  
+  .neu input:checked + span {
+    /* Change box shadow on checked state */
+    box-shadow: inset 1px -1px 4px 0px #f0fffe,
+      inset -1px 1px 4px 0px #00bdb0;
+  }
+  
+  .neu input:checked ~ svg:first-of-type {
+    /* Hide the first svg on checked state */
+    opacity: 0;
+  }
+  
+  .neu input:checked ~ svg:last-of-type {
+    /* Show the second svg on checked state */
+    opacity: 100;
+  }
+
+.main{
+  display: flex;
+}
+
+.flx{
+  flex-grow: 0 ;
+}
+
+.svg{
+
+  @media (max-width: 768px) { /* Media query para dispositivos pequenos */
+    font-size: 1.8vw; /* Aumenta o tamanho da fonte */
+  }
+
+}
+
+
+
+
+
+.neumorphism{
+   
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: 0 5px; /* Diminui a margem */
+  background: #c7c7c7;
+  box-shadow: inset -15px 15px 30px c,
+            inset 15px -15px 30px #e5e5e5;
+  color: black; /* Texto branco */
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.2vw; /* Tamanho inicial do texto */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto inicial */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: #c7c7c7;
+    box-shadow: inset -5px 5px 10px #adadad,
+              inset 5px -5px 10px #e1e1e1;
+    font-size: 1.5vw; /* Aumenta o tamanho do texto no hover */
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Aumenta a sombra do texto no hover */
+  }
+}
+
+
+
+.neumorphismIN{
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: 0 5px; /* Diminui a margem */
+  background: #c7c7c7;
+  box-shadow: inset -5px 5px 10px #adadad,
+  inset 5px -5px 10px #e1e1e1;
+  color: black; /* Texto branco */
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.5vw; /* Tamanho inicial do texto */
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Aumenta a sombra do texto no hover */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: #c7c7c7;
+     box-shadow: inset -15px 15px 30px #a9a9a9,
+            inset 15px -15px 30px #e5e5e5;
+    font-size: 1.2vw; /* Aumenta o tamanho do texto no hover */
+   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto inicial */
+    
+  }
+
+  @media (max-width: 768px) { /* Media query para dispositivos pequenos */
+    padding: 8px 15px; /* Diminui o padding ainda mais */
+    margin: 0 3px; /* Diminui a margem ainda mais */
+    font-size: 1.8vw; /* Aumenta o tamanho da fonte */
+  }
+}
+
+
+.neumorphismOU{
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: 0 5px; /* Diminui a margem */
+  background: #c7c7c7;
+  box-shadow: inset -5px 5px 10px #adadad,
+  inset 5px -5px 10px #e1e1e1;
+  color: black; /* Texto branco */ 
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  font-size: 1.5vw; /* Tamanho inicial do texto */
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Aumenta a sombra do texto no hover */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &:hover {
+background: #c7c7c7,;
+box-shadow:  -9px 9px 18px #bfbfbf,
+             9px -9px 18px #cfcfcf;
+    font-size: 1.7vw; /* Aumenta o tamanho do texto no hover */
+    text-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); /* Sombra de texto inicial */
+    
+  }
+
+  @media (max-width: 768px) { /* Media query para dispositivos pequenos */
+    padding: 8px 15px; /* Diminui o padding ainda mais */
+    margin: 0 3px; /* Diminui a margem ainda mais */
+    font-size: 1.8vw; /* Aumenta o tamanho da fonte */
+  }
+}
+
+
+.neumorphismOU-N{
+  background: #c7c7c7,;
+  box-shadow:  -9px 9px 18px #bfbfbf,
+               9px -9px 18px #cfcfcf;
+      font-size: 1.7vw; /* Aumenta o tamanho do texto no hover */
+      text-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); /* Sombra de texto inicial */
+      
+
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: 0 5px; /* Diminui a margem */
+  color: black; /* Texto branco */ 
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &:hover {
+    background: #c7c7c7;
+    box-shadow: inset -5px 5px 10px #adadad,
+    inset 5px -5px 10px #e1e1e1;
+    font-size: 1.5vw; /* Tamanho inicial do texto */
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Aumenta a sombra do texto no hover */
+
+
+  }
+
+  @media (max-width: 768px) { /* Media query para dispositivos pequenos */
+    padding: 8px 15px; /* Diminui o padding ainda mais */
+    margin: 0 3px; /* Diminui a margem ainda mais */
+    font-size: 1.8vw; /* Aumenta o tamanho da fonte */
+  }
+}
+
+.neumorphism-static-in{
+  background: #c7c7c7,;
+  box-shadow:  -9px 9px 18px #bfbfbf,
+               9px -9px 18px #cfcfcf;
+      font-size: 1.7vw; /* Aumenta o tamanho do texto no hover */
+      text-shadow: 0 8px 8px rgba(0, 0, 0, 0.1); /* Sombra de texto inicial */
+      
+
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: 0 5px; /* Diminui a margem */
+  color: black; /* Texto branco */ 
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  @media (max-width: 768px) { /* Media query para dispositivos pequenos */
+    padding: 8px 15px; /* Diminui o padding ainda mais */
+    margin: 0 3px; /* Diminui a margem ainda mais */
+    font-size: 1.8vw; /* Aumenta o tamanho da fonte */
+    
+  }
+
+
+}
+
+.neumorphismT{
+   
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  margin: 0 5px; /* Diminui a margem */
+  background: #c7c7c700;
+  box-shadow: inset -15px 15px 30px c,
+            inset 15px -15px 30px #e5e5e5;
+  color: black; /* Texto branco */
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 1.2vw; /* Tamanho inicial do texto */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra de texto inicial */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: #c7c7c7;
+    box-shadow: inset -5px 5px 10px #adadad,
+              inset 5px -5px 10px #e1e1e1;
+    font-size: 1.5vw; /* Aumenta o tamanho do texto no hover */
+    text-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); /* Aumenta a sombra do texto no hover */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .mobile\:text-\[10vw\] {
+      font-size: 10vw; /* Ajuste o tamanho conforme necessário */
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .mobile\:img {
+      width: 90px ;
+      height: 90px; /* Ajuste o tamanho conforme necessário */
+  }
+}

@@ -1,2 +1,8 @@
-# Portif-lio-neumorphism
-Este site portifólio foi desenvolvido para servir como um meio de contar um pouco sobre mim, e o estilo neumorphism foi escolhido pois quando eu ainda estava na escola vi um vídeo sobre a estética neumorphism e depois de mais de 6 anos eu fiz um site neste estilo, este foi um site feito por mim e para mim, e me sinto bem com isso kkk.
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
