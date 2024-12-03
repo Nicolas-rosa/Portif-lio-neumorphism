@@ -7,7 +7,6 @@ import Quadro from "../Components/Quadro";
 import Animado from "../Components/Animado";
 import Paragrafo from "../Components/Paragrafo";
 import Trio from "../Components/Trio";
-import Draggable from "react-draggable";
 import Aviso from "../Components/Card";
 export default function Home(){
 return(
@@ -22,7 +21,7 @@ animate-fade-in mobile:text-[10vw] ">
 </h2>
 
         <Paragrafo/>
-<Draggable>
+
         <div className="flex gap-[2vw] flex-wrap-reverse items-center justify-center h-screen space-y-8">
       <div className="flex items-center space-x-4">
       <Circle percentage={20} color="#3498db" />
@@ -38,15 +37,12 @@ animate-fade-in mobile:text-[10vw] ">
       </div>
       
     </div>
-    </Draggable>
-    <Draggable>
+    
+    
         <Trio/>
-        </Draggable>
-  
-        <Draggable>
+    
         <Quadro/>
-        </Draggable>
-  
+    
 
       
         </div>
